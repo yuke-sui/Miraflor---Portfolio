@@ -1,0 +1,129 @@
+# Portfolio-Activity
+Activity
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Carousel· example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: lime;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .card {
+            max-width: 700px;
+            width: 100%;
+            background: black (241, 217, 139);
+            border-radius: 2rem;
+            padding: 2rem 1.5rem 2.5rem 1.5rem;
+            box-shadow: 0 15px 30px limegreen;
+            text-align: center;
+        }
+
+        h2 {
+            color: green;
+            margin-bottom: 1.8rem;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 1.2rem;
+            scroll-snap-type: x mandatory;
+            padding: 0.5rem 0.2rem 1.5rem 0.2rem;
+            scrollbar-width: thin;
+            scrollbar-color: green; #e5d9ff;
+        }
+
+
+        .carousel::-webkit-scrollbar {
+            height: 8px;
+        }
+        .carousel::-webkit-scrollbar-track {
+            background: #e5d9ff;
+            border-radius: 20px;
+        }
+        .carousel::-webkit-scrollbar-thumb {
+            background: #fafafa;
+            border-radius: 20px;
+        }
+
+        .carousel-item {
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+            width: 220px;
+            height: 150px;
+            background: green;
+            border-radius: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: rgb(253, 253, 253);
+            font-weight: bold;
+            box-shadow: 0 8px 12px green
+            border: 3px solid white;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.4rem;
+        }
+
+        .note button{
+            margin-top: 1.8rem;
+            color: green;
+            background:#f3f3f3;
+            padding: 0.8rem 1.2rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            box-shadow: 0 8px 12px green
+        }
+        
+        .button:hover{
+            background-color: #ffffff;
+            color: green
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2><b><marquee> Carousel</marquee></b></h2>
+
+       
+        <div class="carousel">
+    
+            <div class="carousel-item"> 1 <img src= "hq720.jpg" alt="hq720"></div>
+            <div class="carousel-item"> 2 <img src= "bonk.jpg" alt="bonk"></div>
+            <div class="carousel-item"> 3 <img src= "arayko.jpg" alt="arayko"></div>
+            <div class="carousel-item"> 4 <img src= "aww.jpg" alt="aww"></div>
+            <div class="carousel-item"> 5 <img src= "kulot.jpg" alt="kulot"></div>
+            <div class="carousel-item"> 6 <img src= "shade.jpg" alt="shade"></div>
+        </div>
+        <div class="note">
+            <a href="hq720.jpg"><button> 1 </button></a>
+            <a href="bonk.jpg"><button> 2 </button></a>
+            <a href="arayko.jpg"><button> 3 </button></a>
+            <a href="aww.jpg"><button> 4 </button></a>
+            <a href="kulot.jpg"><button> 5 </button></a>
+            <a href="shade.jpg"><button> 6 </button></a>
+        </div>
+    </div>
+</body>
+</html>
